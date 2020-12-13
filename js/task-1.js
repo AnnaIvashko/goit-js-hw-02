@@ -13,11 +13,12 @@
 
 const element = ['Mango', 'Poly', 'Ajax'];
 
-let result = "";
+
 
 
 
 const logItem = (arr) => {
+    let result = "";
     for (let i = 0; i < arr.length; i += 1){
          result = ` ${i + 1} - ${arr[i]} `
         console.log(result);

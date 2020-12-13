@@ -5,14 +5,15 @@
 
 
 
-const checkForSpam = function (message = "") {
-    let string = "";
-    string = message.toLowerCase();
-    const str = string.includes("spam") || string.includes("sale") ? true : false;
+  function checkForSpam (message) {
+    let result = false;
+    message = message.toLowerCase();
+      if (message.includes('spam') || message.includes('sale')) {
+          result = true;
+      }
+      return result;
 
-    return str;
-
-};
+}
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

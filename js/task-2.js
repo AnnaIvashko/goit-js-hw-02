@@ -3,9 +3,11 @@
 // принимающую строку(в строке будут только слова и пробелы) и цену гравировки
 // одного слова, и возвращающую цену гравировки всех слов в строке.
 
-const calculateEngravingPrice = (message = "", pricePerWord = 0) => (
-  pricePerWord = message.split(" ").length * pricePerWord
-)
+const calculateEngravingPrice = (message = "", pricePerWord = 0) => {
+  return message.split(" ").length * pricePerWord;
+}  
+
+
 
 
 
