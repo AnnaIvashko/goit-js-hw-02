@@ -7,13 +7,12 @@
 
 
 
-function formatString (string, maxLength = 40) {
-    if (string.length >= maxLength) {
-      string = string.slice(0, maxLength) + "...";
+function formatString (string) {
+    if (string.length >= 40) {
+     return string.slice(0, 40) + "...";
   } 
-  return string;
   
-
+  return string;
 }
 
 // /*

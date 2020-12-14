@@ -5,14 +5,8 @@
 
 
 
-  function checkForSpam (message) {
-    let result = false;
-    message = message.toLowerCase();
-      if (message.includes('spam') || message.includes('sale')) {
-          result = true;
-      }
-      return result;
-
+function checkForSpam(str) {
+    return str.toLowerCase().includes("spam") || str.toLowerCase().includes("sale");
 }
 
 /*
