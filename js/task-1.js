@@ -14,22 +14,22 @@
 const element = ['Mango', 'Poly', 'Ajax'];
 
 
-const logItem = (arr) => {
-    for(let i = 0; i < arr.length; i += 1) {
-        console.log(` ${i + 1} - ${arr[i]}; `);
-    }
-}
-
-
 // const logItem = (arr) => {
-//     let result = "";
-//     for (let i = 0; i < arr.length; i += 1){
-//          result = ` ${i + 1} - ${arr[i]} `
-//         console.log(result);
+//     for(let i = 0; i < arr.length; i += 1) {
+//         console.log(` ${i + 1} - ${arr[i]}; `);
+//     }
 // }
-//     return result;
+
+
+const logItem = (arr) => {
+    let result = "";
+    for (let i = 0; i < arr.length; i += 1){
+         result += ` ${i + 1} - ${arr[i]}\n `
+        console.log(result);
+}
+    return result;
  
-// }
+}
 
 logItem(element);
 
